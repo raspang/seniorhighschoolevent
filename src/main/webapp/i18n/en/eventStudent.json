@@ -1,0 +1,25 @@
+{
+  "schoolEventApp": {
+    "eventStudent": {
+      "home": {
+        "title": "Attendance",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Attendance",
+        "createOrEditLabel": "Create or edit Attendance",
+        "notFound": "No Attendance found"
+      },
+      "created": "A new Attendance is created with identifier {{ param }}",
+      "updated": "An Attendance is updated with identifier {{ param }}",
+      "deleted": "An Attendance is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Attendance{{ id }}?"
+      },
+      "detail": {
+        "title": "Attendance"
+      },
+      "id": "ID",
+      "student": "Student",
+      "event": "Event"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "applications": "*",
+  "changelogDate": "20220521153330",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "event_student",
+  "fields": [],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "EventStudent",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "student",
+      "otherEntityRelationshipName": "eventStudent",
+      "ownerSide": true,
+      "relationshipName": "student",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "event",
+      "otherEntityRelationshipName": "eventStudent",
+      "ownerSide": true,
+      "relationshipName": "event",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

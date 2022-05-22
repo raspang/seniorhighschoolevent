@@ -1,0 +1,64 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="student">
+      <h2 data-cy="studentDetailsHeading"><span jhiTranslate="schoolEventApp.student.detail.title">Student</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ student.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolEventApp.student.firstName">First Name</span></dt>
+        <dd>
+          <span>{{ student.firstName }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolEventApp.student.middleName">Middle Name</span></dt>
+        <dd>
+          <span>{{ student.middleName }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolEventApp.student.lastName">Last Name</span></dt>
+        <dd>
+          <span>{{ student.lastName }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolEventApp.student.gender">Gender</span></dt>
+        <dd>
+          <span>{{ student.gender }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolEventApp.student.lrn">Lrn</span></dt>
+        <dd>
+          <span>{{ student.lrn }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolEventApp.student.yearLevel">Year Level</span></dt>
+        <dd>
+          <span>{{ student.yearLevel }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolEventApp.student.strand">Strand</span></dt>
+        <dd>
+          <span>{{ student.strand }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolEventApp.student.section">Section</span></dt>
+        <dd>
+          <span>{{ student.section }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolEventApp.student.institutionalEmail">Institutional Email</span></dt>
+        <dd>
+          <span>{{ student.institutionalEmail }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/student', student.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

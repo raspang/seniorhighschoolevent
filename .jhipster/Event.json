@@ -1,0 +1,26 @@
+{
+  "applications": "*",
+  "changelogDate": "20220521153329",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "event",
+  "fields": [
+    {
+      "fieldName": "dateEvent",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "nameEvent",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength"],
+      "fieldValidateRulesMinlength": "2"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Event",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

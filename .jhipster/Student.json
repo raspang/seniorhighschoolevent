@@ -1,0 +1,55 @@
+{
+  "applications": "*",
+  "changelogDate": "20220521153328",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "student",
+  "fields": [
+    {
+      "fieldName": "firstName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "middleName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "gender",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "lrn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "yearLevel",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "strand",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "section",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "institutionalEmail",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Student",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

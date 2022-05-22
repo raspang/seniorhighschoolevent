@@ -1,0 +1,36 @@
+
+entity Student {
+	firstName String required,
+    middleName String,
+    lastName String required,
+    gender String required,
+    lrn String,
+    yearLevel String,
+    strand String,
+    section String,
+    institutionalEmail String,
+}
+entity Event {
+  dateEvent Instant,
+  nameEvent String required minlength(2)
+}
+
+entity EventStudent {
+}
+
+relationship OneToOne {
+  EventStudent{student} to Student,
+  EventStudent{event} to Event
+}
+
+// Set pagination options
+paginate Student, Event, EventStudent with pagination 
+
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
